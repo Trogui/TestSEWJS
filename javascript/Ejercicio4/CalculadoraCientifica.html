@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta name ="author" content ="Alberto Guerra Rodas" />
+    <meta name ="description" content ="Plantilla para los diferentes archivos html usados en el curso" />
+    <meta name ="keywords" content ="palabras,clave,importantes,en,la,página,web" />
+    
+    
+    <meta charset="UTF-8" />
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+
+    <title>CalculadoraCientifica</title>
+
+
+    <script src="CalculadoraBasica.js"></script>
+    <script src="CalculadoraCientifica.js" ></script>
+
+
+    
+</head>
+
+<body>
+
+    <main>
+
+        <input type = "text" disabled readonly>
+
+        <input type = "button" value = "MR" onclick="calcu.enseñarMemoria()" >  
+
+        <input type = "button" value = "MC" onclick="calcu.resetearMemoria()" >  
+        
+        <input type = "button" value = "M+" onclick="calcu.sumarMemoria()">
+
+        <input type = "button" value = "M-" onclick="calcu.restarMemoria()"> 
+        
+        <input type = "button" value = "MS" onclick="calcu.guardaMemoria()">
+          
+          
+
+        <input type = "button" value = "x^2" onclick="calcu.cuadrado()">
+        <input type = "button" value = "x^y" onclick="calcu.elevadoA()">
+        <input type = "button" value = "sin" onclick="calcu.seno()">
+        <input type = "button" value = "cos" onclick="calcu.coseno()">
+        <input type = "button" value = "tan" onclick="calcu.tangente()">
+        <input type = "button" value = "√" onclick = "calcu.raiz()"> 
+        <input type = "button" value = "10^x" onclick="calcu.elevado10A()">
+        <input type = "button" value = "Log" onclick="calcu.logaritmo()">
+        <input type = "button" value = "Exp" onclick="calcu.exponenteNatural()">
+        <input type = "button" value = "Mod" onclick="calcu.modulo()">
+        <input type = "button" value = "↑" onclick="calcu.shift()">
+        <input type = "button" value = "CE"  onclick="calcu.borrarPantalla()">
+        <input type = "button" value = "ON/C" onclick="calcu.borrar()"> 
+        <input type = "button" value = "DEL" onclick="calcu.borrarUno()">
+        <input type = "button" value = "/" onclick="calcu.division()"> 
+        <input type = "button" value = "π" onclick="calcu.pi()">
+        <input type = "button" value = "7" onclick="calcu.digito(7)">  
+        <input type = "button" value = "8" onclick="calcu.digito(8)">  
+        <input type = "button" value = "9" onclick="calcu.digito(9)"> 
+        <input type = "button" value = "x" onclick="calcu.multiplicacion()"/> 
+        <input type = "button" value = "n!" onclick="calcu.factorial()">
+        <input type = "button" value = "4" onclick="calcu.digito(4)">  
+        <input type = "button" value = "5" onclick="calcu.digito(5)">  
+        <input type = "button" value = "6" onclick="calcu.digito(6)"> 
+        <input type = "button" value = "-" onclick="calcu.resta()">  
+        <input type = "button" value = "+/-" onclick="calcu.masmenos()">  
+        <input type = "button" value = "1" onclick="calcu.digito(1)">     
+        <input type = "button" value = "2" onclick="calcu.digito(2)">  
+        <input type = "button" value = "3" onclick="calcu.digito(3)">  
+        <input type = "button" value = "+" onclick="calcu.suma()">  
+        <input type = "button" value = "(" onclick="calcu.parentesisIzquierdo()">
+        <input type = "button" value = ")" onclick="calcu.parentesisDerecho()">
+        <input type = "button" value = "0" onclick="calcu.digito(0)">
+        <input type = "button" value = "." onclick="calcu.punto()">  
+        <input type = "button" value = "=" onclick="calcu.igual()">
+
+
+
+
+
+
+
+
+
+         
+        
+          
+         
+         
+        
+         
+        
+       
+
+    </main>
+
+
+</body>
+
+</html>

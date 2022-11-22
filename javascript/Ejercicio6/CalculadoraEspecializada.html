@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="author" content="Alberto Guerra Rodas" />
+    <meta
+      name="description"
+      content="Plantilla para los diferentes archivos html usados en el curso"
+    />
+    <meta
+      name="keywords"
+      content="palabras,clave,importantes,en,la,página,web"
+    />
+
+    <meta charset="UTF-8" />
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="CalculadoraEspecializada.css"
+    />
+
+    <title>Calculadora Especializada</title>
+
+    <script src="CalculadoraRPN.js"></script>
+    <script src="CalculadoraEspecializada.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <textarea disabled readonly> </textarea>
+      <input type="text" value="" disabled readonly />
+      <input
+        type="button"
+        value="Días Hasta Fecha"
+        onclick="calc.diasHastaFecha()"
+      />
+      <input
+        type="button"
+        value="Día de la semana"
+        onclick="calc.diaSemana()"
+      />
+      <input type="button" value="CE" onclick="calc.borrarPantalla()" />
+      <input type="button" value="DEL" onclick="calc.borrar1()" />
+      <input type="button" value="ON/C" onclick="calc.borrarTodo()" />
+      <input
+        type="button"
+        value="Diferencia (Días)"
+        onclick="calc.diferenciaDias()"
+      />
+      <input
+        type="button"
+        value="Diferencia (Semanas)"
+        onclick="calc.diferenciaSemanas()"
+      />
+      <input type="button" value="7" onclick="calc.digito(7)" />
+      <input type="button" value="8" onclick="calc.digito(8)" />
+      <input type="button" value="9" onclick="calc.digito(9)" />
+      <input
+        type="button"
+        value="Es Fin de Semana?"
+        onclick="calc.esFinDeSemana()"
+      />
+      <input
+        type="button"
+        value="Es Día Laborable?"
+        onclick="calc.esDiaLaborable()"
+      />
+      <input type="button" value="4" onclick="calc.digito(4)" />
+      <input type="button" value="5" onclick="calc.digito(5)" />
+      <input type="button" value="6" onclick="calc.digito(6)" />
+      <input type="button" value="Nº Semana" onclick="calc.numeroSemana()" />
+      <input
+        type="button"
+        value="Es año bisiesto?"
+        onclick="calc.esAñoBisiesto()"
+      />
+      <input type="button" value="1" onclick="calc.digito(1)" />
+      <input type="button" value="2" onclick="calc.digito(2)" />
+      <input type="button" value="3" onclick="calc.digito(3)" />
+      <input type="button" value="Fecha Random" onclick="calc.fechaRandom()" />
+      <input
+        type="button"
+        value="Borrar 1º Pila"
+        onclick="calc.borrar1Pila()"
+      />
+      <input type="button" value="-" onclick="calc.guion()" />
+      <input type="button" value="0" onclick="calc.digito(0)" />
+      <input type="button" value="enter" onclick="calc.enter()" />
+    </main>
+  </body>
+</html>

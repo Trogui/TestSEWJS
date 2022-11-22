@@ -1,0 +1,51 @@
+main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    gap: 1em;
+
+    width: 50%;
+
+    padding: 1.5em;
+    
+    color: whitesmoke;
+    background-color: #249fbe;
+
+    border: solid 0.2em rgb(20, 20, 20);
+}
+
+textarea{
+
+    grid-column: 1 / 6;
+    text-align: right;
+    min-height: 10em;
+    max-height: 10em;
+    max-width: 98%;
+    min-width: 98%;
+    color: rgb(20, 20, 20);;
+    border: solid 0.15em rgb(20, 20, 20);
+    background-color: rgba(228, 225, 225, 0.973);
+    
+    font-size: 2em;
+}
+
+input{
+    
+    color: rgb(20, 20, 20);
+    background-color: rgba(248, 246, 246, 0.973);
+    border: solid 0.1em rgb(20, 20, 20);
+}
+
+input[type = "text"]{
+    font-size: 2em;
+    grid-column: 1 / 6;
+    text-align: right;
+}
+
+
+input[type = "button"]{
+    font-size: 1.5em;
+    min-height: 2em;
+    max-width: 10em;
+}
