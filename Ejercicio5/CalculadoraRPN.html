@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="author" content="Alberto Guerra Rodas" />
+    <meta name ="description" content ="Ejercicio 5 Javascript Calculadora RPN" />
+    <meta name ="keywords" content ="Javascript, Calculadora, Suma, Resta, Stack, Pila, Enter "/>
+
+    <meta charset="UTF-8" />
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+
+    <title>Calculadora RPN</title>
+
+    <script src="CalculadoraRPN.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <label for="textarea">Pila de numeros</label>
+      <textarea id="textarea" disabled readonly> </textarea>
+      <label for="input">Input de texto</label>
+      <input type="text" id="input" value="" disabled readonly />
+      <input type="button" value="sin" onclick="calc.seno()" />
+      <input type="button" value="arcSin" onclick="calc.arcoSeno()" />
+      <input type="button" value="+/-" onclick="calc.masmenos()" />
+      <input type="button" value="DEL" onclick="calc.borrar1()" />
+      <input type="button" value="ON/C" onclick="calc.borrarTodo()" />
+      <input type="button" value="cos" onclick="calc.coseno()" />
+      <input type="button" value="arcCos" onclick="calc.arcoCoseno()" />
+      <input type="button" value="7" onclick="calc.digito(7)" />
+      <input type="button" value="8" onclick="calc.digito(8)" />
+      <input type="button" value="9" onclick="calc.digito(9)" />
+      <input type="button" value="tan" onclick="calc.tangente()" />
+      <input type="button" value="arcTan" onclick="calc.arcoTangente()" />
+      <input type="button" value="4" onclick="calc.digito(4)" />
+      <input type="button" value="5" onclick="calc.digito(5)" />
+      <input type="button" value="6" onclick="calc.digito(6)" />
+      <input type="button" value="-" onclick="calc.resta()" />
+      <input type="button" value="+" onclick="calc.suma()" />
+      <input type="button" value="1" onclick="calc.digito(1)" />
+      <input type="button" value="2" onclick="calc.digito(2)" />
+      <input type="button" value="3" onclick="calc.digito(3)" />
+      <input type="button" value="x" onclick="calc.multiplicacion()" />
+      <input type="button" value="/" onclick="calc.division()" />
+      <input type="button" value="." onclick="calc.punto()" />
+      <input type="button" value="0" onclick="calc.digito(0)" />
+      <input type="button" value="enter" onclick="calc.enter()" />
+    </main>
+
+
+    <h3> Tutorial Simple </h3>
+    <p>La notación polaca funciona de forma que primero van los números y luego los operandos. </p>
+    <p>Por ejemplo, para escribir "2 + 3" en notación polaca inversa, escribe "2 3 + ".</p>
+    <p>Para hacer esto en la calculadora habrá que pulsar 2, enter, 3, enter, +</p>
+    <p>Por ejemplo, para escribir "(2 + 3) * 4" en notación polaca inversa, escribe "2 3 + 4 * ".</p>
+
+  </body>
+</html>
